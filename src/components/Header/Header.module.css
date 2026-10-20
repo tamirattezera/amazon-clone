@@ -16,10 +16,15 @@
 
 .header__container {
   display: flex;
+  flex-direction: column;
+  padding: 8px 15px;
+}
+
+.header__top {
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 15px;
-  height: 60px;
+  width: 100%;
   gap: 15px;
 }
 
@@ -31,7 +36,7 @@
 }
 
 .logo__container img {
-  width: 100px;
+  width: 95px;
   object-fit: contain;
   margin-top: 8px;
   cursor: pointer;
@@ -70,11 +75,21 @@
 /* Center: Search Section */
 .search__container {
   display: flex;
-  flex: 1;
   height: 40px;
   border-radius: 4px;
   overflow: hidden;
+  width: 100%;
+}
+
+.desktop__search {
+  flex: 1;
   max-width: 700px;
+}
+
+.mobile__search {
+  display: none;
+  margin-top: 8px;
+  margin-bottom: 4px;
 }
 
 .search__container:focus-within {
@@ -84,12 +99,10 @@
 .search__select {
   background-color: #f3f3f3;
   border: none;
-  padding: 0 10px;
+  padding: 0 8px;
   font-size: 12px;
   color: #555;
   cursor: pointer;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
 }
 
 .search__input {
@@ -98,6 +111,7 @@
   padding: 0 10px;
   font-size: 15px;
   outline: none;
+  min-width: 50px;
 }
 
 .search__iconContainer {
@@ -108,8 +122,7 @@
   width: 45px;
   color: #111;
   cursor: pointer;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
+  flex-shrink: 0;
 }
 
 .search__iconContainer:hover {
@@ -120,7 +133,7 @@
 .right__container {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
 }
 
 .language__container {
@@ -153,6 +166,7 @@
   flex-direction: column;
   padding: 5px;
   border: 1px solid transparent;
+  white-space: nowrap;
 }
 
 .nav__item:hover {
@@ -202,4 +216,61 @@
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 3px;
+}
+
+/* ========================================================= */
+/* RESPONSIVE MEDIA QUERIES                                 */
+/* ========================================================= */
+
+/* Tablet View (Under 900px) */
+@media screen and (max-width: 900px) {
+  .delivery__container {
+    display: none;
+  }
+
+  .language__container {
+    display: none;
+  }
+}
+
+/* Mobile View (Under 768px) */
+@media screen and (max-width: 768px) {
+  .desktop__search {
+    display: none;
+  }
+
+  .mobile__search {
+    display: flex;
+  }
+
+  .right__container {
+    gap: 5px;
+  }
+
+  .nav__item p {
+    font-size: 10px;
+  }
+
+  .nav__item span {
+    font-size: 12px;
+  }
+
+  .cart__text {
+    display: none;
+  }
+}
+
+/* Small Mobile View (Under 480px) */
+@media screen and (max-width: 480px) {
+  .logo__container img {
+    width: 75px;
+  }
+
+  .nav__item p {
+    display: none;
+  }
+
+  .nav__item span {
+    font-size: 11px;
+  }
 }

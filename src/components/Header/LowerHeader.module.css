@@ -7,6 +7,19 @@
   display: flex;
   align-items: center;
   padding-left: 15px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.lower__container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.lower__container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .lower__container ul {
@@ -26,6 +39,7 @@
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 2px;
+  flex-shrink: 0;
 }
 
 .lower__container li:hover {

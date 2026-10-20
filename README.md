@@ -1,16 +1,37 @@
-# React + Vite
+# 🛒 Amazon Clone (React & Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A feature-rich frontend clone of the Amazon e-commerce platform built using **React**, **Vite**, and **CSS Modules**. This project replicates the core layout, navigation elements, search bar, and responsive header design of Amazon.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **Custom Amazon Header & Navigation:** Replicated desktop and mobile navigation layout including the Amazon logo, delivery location selector, department dropdown, and search bar.
+- **Secondary Navigation Bar (LowerHeader):** Includes links to Prime Video, Customer Service, Today's Deals, Registry, and more.
+- **Component-Based Architecture:** Built with isolated, modular components (`Header`, `LowerHeader`) styled using CSS Modules to prevent style collisions.
+- **React Icons Integration:** Utilizes `react-icons` for modern UI symbols (cart, search, menu, and location pins).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React, Vite
+- **Styling:** CSS Modules, Flexbox
+- **Icons:** React Icons
+- **Version Control:** Git & GitHub
+
+---
+
+## 🚀 Getting Started & Installation
+
+To run this project locally on your machine, follow these steps:
+
+### Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) installed on your system.
+
+### 1. Clone the repository
+
+```bash
+git clone [https://https://github.com/tamirattezera/amazon-clone](https://github.com/tamirattezera/amazon-clone)
+```

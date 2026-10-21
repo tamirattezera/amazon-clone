@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import classes from "./Header.module.css";
 import { BiCart } from "react-icons/bi";
 import { IoSearch } from "react-icons/io5";
@@ -15,12 +16,12 @@ function Header() {
             {/* Logo & Delivery Section */}
             <div className={classes.left__container}>
               <div className={classes.logo__container}>
-                <a href="/">
+                <Link to="/">
                   <img
                     src="https://pngimg.com/uploads/amazon/small/amazon_PNG11.png"
                     alt="amazon logo"
                   />
-                </a>
+                </Link>
               </div>
 
               <div className={classes.delivery__container}>
@@ -65,23 +66,23 @@ function Header() {
               </div>
 
               {/* Sign In */}
-              <a href="/auth" className={classes.nav__item}>
+              <Link to="/auth" className={classes.nav__item}>
                 <p>Hello, Sign in</p>
                 <span>Account & Lists</span>
-              </a>
+              </Link>
 
               {/* Orders */}
-              <a href="/orders" className={classes.nav__item}>
+              <Link to="/orders" className={classes.nav__item}>
                 <p>Returns</p>
                 <span>& Orders</span>
-              </a>
+              </Link>
 
               {/* Cart */}
-              <a href="/cart" className={classes.cart__container}>
+              <Link to="/cart" className={classes.cart__container}>
                 <div className={classes.cart__count}>0</div>
                 <BiCart size={35} />
                 <span className={classes.cart__text}>Cart</span>
-              </a>
+              </Link>
             </div>
           </div>
 

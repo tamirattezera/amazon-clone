@@ -1,0 +1,19 @@
+.carousel__container {
+  position: relative;
+  width: 100%;
+}
+
+.hero__fade {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  bottom: 0;
+  z-index: 10;
+  pointer-events: none;
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(237, 239, 241, 0.7),
+    #eaeded
+  );
+}

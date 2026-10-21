@@ -1,11 +1,13 @@
 import { useState } from "react";
-import Header from "./components/Header/Header"
+import Header from "./components/Header/Header";
+import CarouselEffect from "./components/Carousel/Carousel";
 
 function App() {
   return (
-   <div>
-    <Header/>
-   </div>
+    <div>
+      <Header />
+      <CarouselEffect />
+    </div>
   );
 }
 
